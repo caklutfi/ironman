@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.row {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+	</style>
+	<title></title>
+</head>
+<body>
+	<div class="row"> 
+  <div class="column">
+	    <img src="email.png">
+		<img src="violin.png">
+		<img src="workspace.png">
+  </div>
+  <div class="column">
+	    <img src="brainstorm.png">
+		<img src="calculation.png">
+		<img src="chat.png">
+  </div> 
+  <div class="column">
+    	<img src="audio.png">
+	 	<img src="biology.png">
+		<img src="book.png">
+  </div>
+</div>
+<button onclick="one()">1</button>
+<button onclick="two()">2</button>
+<button onclick="four()">4</button>
+
+<script>
+// Get the elements with class="column"
+var elements = document.getElementsByClassName("column");
+
+// Declare a "loop" variable
+var i;
+
+// Full-width images
+function one() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "100%"; 
+  }
+}
+
+// Two images side by side
+function two() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "50%"; 
+  }
+}
+
+// Four images side by side
+function four() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.flex = "25%"; 
+  }
+}
+</script>
+
+</body>
+</html>
