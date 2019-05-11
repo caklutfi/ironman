@@ -3,30 +3,37 @@
 	<title>latihan</title>
 	<style type="text/css">
 		body {
-			background-color: #252f25;
+			background-color: #fbf7ab;
 		}
-		.text {
-			font-family: calibri;
-			font-size: 72;
-			text-align: center;
-			font-style: italic;
-		}
+
+
 		.grid-container {
 			position: top;
+			margin: 0 auto;	
 			border-style: solid;
-			background-color: #95370d;
-			align-items: center;
-			justify-content: all;
+			background-color: #f6cb63;
+			width: 80vw;
 			display: grid;
 			grid-template-columns: auto auto auto;
 			grid-column-gap: 0;
 			grid-row-gap: 0;
-			padding: 20;
-
-			
+			padding: 3vw;
+			border-width: 0;			
 		}
-		.grid-item {
-				padding: ;
+		.pilihan {
+			position: top;
+			margin: 0 auto;
+			margin-top: 50;
+			width: 80vw;
+			border-style: solid;
+			background-color: #ddac4e;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-column-gap: 0;
+			grid-row-gap: 0;
+			padding: 3vw;
+			border-width: 0;
+
 
 		}
 		img	{
@@ -41,32 +48,113 @@
 
 
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+  		$(".gambar9").click(function(){
+   		 $(".deskripsi").html('a collapsible shade for protection against weather consisting of fabric stretched over hinged ribs radiating from a central pole');
+   		 alert('assalamualaikum');
+  		  });
+		});
+
+	$(document).ready(function(){
+  		$(".gambar8").click(function(){
+   		 $(".deskripsi").html('a cell phone that includes additional software functions (such as e-mail or an Internet browser)');
+  		  });
+		});
+	
+	$(document).ready(function(){
+  		$(".gambar7").click(function(){
+   		 $(".deskripsi").text('an outer covering for the human foot typically having a thick or stiff sole with an attached heel and an upper part of lighter material');
+  		  });
+		});
+	
+	$(document).ready(function(){
+  		$(".gambar6").click(function(){
+   		 $(".deskripsi").text('something generally accepted as a medium of exchange, a measure of value, or a means of payment');
+  		  });
+		});
+	
+	$(document).ready(function(){
+  		$(".gambar5").click(function(){
+   		 $(".deskripsi").text('a cone-shaped device used to intensify or direct the voice');
+  		  });
+		});
+	
+	$(document).ready(function(){
+  		$(".gambar4").click(function(){
+   		 $(".deskripsi").text('a small usually ring-shaped piece of sweet fried dough');
+  		  });
+		});
+	
+	$(document).ready(function(){
+  		$(".gambar3").click(function(){
+   		 $(".deskripsi").text('a usually electronic device for performing mathematical calculations');
+  		  });
+		});
+	
+	$(document).ready(function(){
+  		$(".gambar2").click(function(){
+   		 	$(".deskripsi").text('a usually flexible container that may be closed for holding, storing, or carrying something');
+  		  });
+		});
+	
+	$(document).ready(function(){
+  		$(".gambar1").click(function(){
+   		 	$(".deskripsi").text('a set of written, printed, or blank sheets bound together between a front and back cover');
+
+  		  });
+		});
+
+
+</script>
 	
 </head>
 <body>
-	<div class="text">
-		<p></p>
 
-		<br>
-	</div>
-	<h2 style="text-align: center; color: #f15914; font-size: 72; font-family: century gothic; font-weight: bold; ">IRONMAN 8</h2>
-<div class="grid-container">
-	
-		  <div class="grid-item"><a href="halaman.html"><img src="9.png"></a></div>
-	 	  <div class="grid-item"><img src="8.png"></div>
-		  <div class="grid-item"><img src="7.png"></div>
-	
-		  <div class="grid-item"><img src="6.png"></div>
-		  <div class="grid-item"><img src="5.png"></div>
-		  <div class="grid-item"><img src="4.png"></div>
 
-		  <div class="grid-item"><img src="3.png"></div>
-		  <div class="grid-item"><img src="2.png"></div>
-		  <div class="grid-item"><img src="1.png"></div>
+		<h2 id="hasuw" style="color: #f15914; font-size: 10vw; font-family:cursive; font-weight: bold; "></h2>
+	<div class="deskripsi" style="display: grid; border-radius: 25px; border: 4px solid #854442; 
+   color: #b77e31; font-size: 3vw ; font-family: cursive; text-align: center; font-weight: bold; background-color: #64260c; padding-left: 2vw; padding-right: 2vw; height: 20vw"><p style="text-anchor: middle;"></p>
+		
+
+	</div>	
+<div onclick="playAudio()" class="grid-container">
+	
+		  <div class="gambar9"><img src="9a.png"></div>
+	 	  <div class="gambar8"><img src="8a.png"></div>
+		  <div class="gambar7"><img src="7a.png"></div>
+	
+		  <div class="gambar6"><img src="6a.png"></div>
+		  <div class="gambar5"><img src="5a.png"></div>
+		  <div class="gambar4"><img src="4a.png"></div>
+
+		  <div class="gambar3"><img src="3a.png"></div>
+		  <div class="gambar2"><img src="2a.png"></div>
+		  <div class="gambar1"><img src="1a.png"></div>
 
 </div>
 
+<div class="pilihan">
+		  <div onclick="benar()" class="pilihan1"><img src="9a.png"></div>
+	 	  <div class="pilihan2"><img src="8a.png"></div>
+		  <div class="pilihan3"><img src="7a.png"></div>
+	
+</div>
+<audio id="tepuk">
+	<source src="shoes.mp3" type="audio/mpeg">
+	Your browser isn't invited for super fun audio time.
+</audio>
+
 <script type="text/javascript">
+	var x = document.getElementById("tepuk");
+	function playAudio() {
+		x.play();
+		// body...
+	}
+	
+
+
 </script>
 </body>
 </html>
